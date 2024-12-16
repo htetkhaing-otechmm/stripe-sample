@@ -6,6 +6,7 @@ import { useRef, useState } from 'react';
 import CardList from '../card/card-list';
 import CustomerInfo from '../customer/customer-info';
 import CustomerSubscription from '../customer/customer-subscription';
+
 export default function HomePage() {
     const cardListRef = useRef(null);
     const { data: session } = useSession();
@@ -68,8 +69,6 @@ export default function HomePage() {
                     </li>
                 </ul>
             </section>
-
-       
 
             <section>
                 <CustomerSubscription />
